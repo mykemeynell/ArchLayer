@@ -3,7 +3,8 @@
 namespace ArchLayer\FilterSort;
 
 use Carbon\Carbon;
-use Symfony\Component\HttpFoundation\ParameterBag;
+use Symfony\Component\HttpFoundation\ParameterBag as SymfonyParameterBag;
+use ArchLayer\FilterSort\Contract\FilterBagInterface;
 
 
 /**
@@ -11,7 +12,7 @@ use Symfony\Component\HttpFoundation\ParameterBag;
  *
  * @package ArchLayer\FilterSort
  */
-abstract class FilterBag extends ParameterBag implements FilterBagInterface
+abstract class FilterBag extends SymfonyParameterBag implements FilterBagInterface
 {
     /**
      * {{@inheritdoc}}

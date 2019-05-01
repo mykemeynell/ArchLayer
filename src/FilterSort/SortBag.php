@@ -2,6 +2,7 @@
 
 namespace ArchLayer\FilterSort;
 
+use ArchLayer\FilterSort\Contract\SortBagInterface;
 use Symfony\Component\HttpFoundation\ParameterBag as SymfonyParameterBag;
 
 /**
